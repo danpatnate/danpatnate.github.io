@@ -1,11 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Dimension V2",
+    title: "DAN NATE - Web Developer",
     author: "Hunter Chang",
     description: "A Gatsby.js V2 Starter based on Dimension by HTML5 UP"
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -19,6 +26,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    'gatsby-transformer-remark',
   ],
 }
