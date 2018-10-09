@@ -48,9 +48,11 @@
 		}
 
 		.logo {
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			width: 5.5rem;
 			height: 5.5rem;
-			line-height: 5.5rem;
 			border: solid _size(border-width) _palette(border);
 			border-radius: 100%;
 
@@ -78,6 +80,18 @@
 				padding: 3rem 2rem;
 				max-height: 40rem;
 				overflow: hidden;
+
+				p {
+					.developer {
+						color: #00c7b7;
+						font-weight: bold;
+					}
+
+					.designer {
+						color: rgb(140, 101, 179);
+						font-weight: bold;
+					}
+				}
 
 				> :last-child {
 					margin-bottom: 0;

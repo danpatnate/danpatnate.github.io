@@ -7,9 +7,9 @@
 /* Icon */
 
 	.icon {
-		@include icon;
-		border-bottom: none;
-		position: relative;
+		i {
+			font-size: 35px;
+		}
 
 		> .label {
 			display: none;
