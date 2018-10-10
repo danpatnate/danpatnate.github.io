@@ -26,14 +26,17 @@ class Main extends React.Component {
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Work</h2>
           <span className="image main"><img src={pic02} alt="" /></span>
-          <p>Experienced in software engineering for Fortune 500 companies and start-ups. Focusing in the high-tech, health, and arts industries. And skilled in Frontend Development, Web Design, Wireframing, UX Design, and Project Management</p>
+          <p>Experienced in software engineering for Fortune 500 companies and start-ups. Focusing in the high-tech, health, and arts industries. And skilled in Frontend Development, Web Design, Wireframing, UX Design, and Project Management.</p>
           {close}
         </article>
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Blog</h2>
-          <span className="image main"><img src={pic03} alt="" /></span>
-          <p>GOTO Blog</p>
+          <span className="image main" style={{}}>
+            <img src={pic03} style={{ 'width': '35%' }} alt="Me - Dan" />
+            <div>Check out my blog to really learn</div>
+            <p>Still inside the gray box</p>
+          </span>
           {close}
         </article>
 
