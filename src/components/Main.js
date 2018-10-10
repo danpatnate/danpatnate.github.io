@@ -16,22 +16,24 @@ class Main extends React.Component {
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Intro</h2>
           <span className="image main"><img src={pic01} alt="" /></span>
-          <p>Experienced Software Engineer with a demonstrated history of working in the tech, health and arts industries. Skilled in Wireframing, Business Process Design, Javascript, Web Design, and Management</p>
+          <p>
+            Helping individuals and companies work thru the evolving Application Development space.
+            And driving the production of value thru code and advisement.
+          </p>
           {close}
         </article>
 
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Work</h2>
           <span className="image main"><img src={pic02} alt="" /></span>
-          <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-          <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+          <p>Experienced in software engineering for Fortune 500 companies and start-ups. Focusing in the high-tech, health, and arts industries. And skilled in Frontend Development, Web Design, Wireframing, UX Design, and Project Management</p>
           {close}
         </article>
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">About</h2>
+          <h2 className="major">Blog</h2>
           <span className="image main"><img src={pic03} alt="" /></span>
-          <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+          <p>GOTO Blog</p>
           {close}
         </article>
 
@@ -57,9 +59,9 @@ class Main extends React.Component {
           </form>
           <ul className="icons">
             <li><a href="https://www.linkedin.com/in/dan-nate-4aa44215/" className="icon-contact"><i className="fab fa-linkedin-in"></i><span className="label"></span></a></li>
-            <li><a href="https://instagram.com/dannynate/" className="icon-contact"><i className="fab fa-instagram"></i><span className="label"></span></a></li>
+            {/*<li><a href="https://instagram.com/dannynate/" className="icon-contact"><i className="fab fa-instagram"></i><span className="label"></span></a></li>
             <li><a href="https://github.com/danpatnate" className="icon-contact"><i className="fab fa-github"></i><span className="label"></span></a></li>
-          </ul>
+          */}</ul>
           {close}
         </article>
 
