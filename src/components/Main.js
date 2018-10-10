@@ -36,7 +36,7 @@ class Main extends React.Component {
         </article>
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Contact</h2>
+          <h2 className="major">Contact me</h2>
           <form method="post" action="#" name="contact" data-netlify="true" netlify>
             <div className="field half first">
               <label htmlFor="name">Name</label>
@@ -56,9 +56,9 @@ class Main extends React.Component {
             </ul>
           </form>
           <ul className="icons">
-            <li><a href="https://www.linkedin.com/in/dan-nate-4aa44215/" className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
-            <li><a href="https://instagram.com/dannynate/" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-            <li><a href="https://github.com/danpatnate" className="icon fa-github"><span className="label">GitHub</span></a></li>
+            <li><a href="https://www.linkedin.com/in/dan-nate-4aa44215/" className="icon-contact"><i className="fab fa-linkedin-in"></i><span className="label"></span></a></li>
+            <li><a href="https://instagram.com/dannynate/" className="icon-contact"><i className="fab fa-instagram"></i><span className="label"></span></a></li>
+            <li><a href="https://github.com/danpatnate" className="icon-contact"><i className="fab fa-github"></i><span className="label"></span></a></li>
           </ul>
           {close}
         </article>

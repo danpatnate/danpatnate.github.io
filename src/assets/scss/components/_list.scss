@@ -44,10 +44,14 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
+			display: flex;
+    	align-content: center;
+    	align-items: center;
 
 			li {
-				display: inline-block;
-				padding: 0 0.75em 0 0;
+				display: flex;
+	    align-content: center;
+	    align-items: center;
 
 				&:last-child {
 					padding-right: 0;
