@@ -15,6 +15,7 @@ module.exports = {
         head: false,
         // enable ip anonymization
         anonymize: true,
+      }
     },
     {
       resolve: 'gatsby-source-filesystem',
