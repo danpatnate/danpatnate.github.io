@@ -39,7 +39,7 @@ class Main extends React.Component {
           {close}
         </article>
 
-        <article className={'contact'} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <article className='contact' style={{display:'none'}}>
           <h2 className="major"><a href="mailto:danpatnate@gmail.com">Contact me</a></h2>
         </article>
       </div>
