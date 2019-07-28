@@ -13,7 +13,7 @@ class Layout extends React.Component {
 
   componentDidMount() {
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){window.dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'UA-144720509-1');
