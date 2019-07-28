@@ -39,16 +39,9 @@ class Main extends React.Component {
           {close}
         </article>
 
-        <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <article className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major"><a href="mailto:danpatnate@gmail.com">Contact me</a></h2>
-          <ul className="icons">
-            <li><a href="https://www.linkedin.com/in/dan-nate-4aa44215/" className="icon-contact"><i className="fab fa-linkedin-in"></i><span className="label"></span></a></li>
-            {/*<li><a href="https://instagram.com/dannynate/" className="icon-contact"><i className="fab fa-instagram"></i><span className="label"></span></a></li>
-            <li><a href="https://github.com/danpatnate" className="icon-contact"><i className="fab fa-github"></i><span className="label"></span></a></li>
-          */}</ul>
-          {close}
         </article>
-
       </div>
     )
   }
