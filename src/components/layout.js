@@ -12,11 +12,6 @@ class Layout extends React.Component {
   }
 
   componentDidMount() {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){window.dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-144720509-1');
   }
 
   render () {
@@ -59,8 +54,6 @@ class Layout extends React.Component {
               ]}
             >
               <html lang="en" />
-              <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144720509-1"></script>
-              <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
             </Helmet>
             {content}
           </>
