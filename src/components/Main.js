@@ -4,6 +4,8 @@ import PropTypes from 'prop-types'
 import pic01 from '../images/interest.jpg'
 import pic02 from '../images/mio.jpg'
 import pic03 from '../images/green_sharp.jpg'
+import accenture from '../images/acn2.png'
+
 
 class Main extends React.Component {
   render() {
@@ -33,8 +35,17 @@ class Main extends React.Component {
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Blog</h2>
           <span className="image main" style={{}}>
-            <img src={pic03} style={{ 'width': '35%' }} alt="Me - Dan" />
+            <img src={pic03} alt="Me - Dan" />
             <div>Coming soon!</div>
+          </span>
+          {close}
+        </article>
+
+        <article id="people" className={`${this.props.article === 'people' ? 'active wh' : 'wh'} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          <h2 className="major">People I've worked with</h2>
+          <span className="image main" style={{}}>
+            <img src={accenture} alt="accenture" />
+            <div></div>
           </span>
           {close}
         </article>
