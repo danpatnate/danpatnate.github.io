@@ -7,10 +7,14 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: `gatsby-plugin-gtag`,
       options: {
-        trackingId: "UA-144720509-1",
-      }
+        // your google analytics tracking id
+        trackingId: `UA-144720509-1`,
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // enable ip anonymization
+        anonymize: true,
     },
     {
       resolve: 'gatsby-source-filesystem',
