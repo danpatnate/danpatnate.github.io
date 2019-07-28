@@ -18,6 +18,9 @@ const Footer = (props) => (
         <a href="https://www.instagram.com/dannatepaint/">
           <i class="fas fa-palette"></i>
         </a>
+        <a href="mailto:danpatnate@gmail.com">
+          <i class="far fa-envelope"></i>
+        </a>
         <p className="copyright">&copy; Nate - Built with: <a href="https://www.gatsbyjs.org/">Gatsby.js</a></p>
     </footer>
 )

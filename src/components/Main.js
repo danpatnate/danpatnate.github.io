@@ -50,7 +50,7 @@ class Main extends React.Component {
           {close}
         </article>
 
-          <h2><a href="mailto:danpatnate@gmail.com">Contact me</a></h2>
+        <h2><a href="mailto:danpatnate@gmail.com">Contact me</a></h2>
       </div>
     )
   }
