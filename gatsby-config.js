@@ -19,7 +19,7 @@ module.exports = {
         name: 'pages',
       }
     },
-
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'gatsby-starter-default',
