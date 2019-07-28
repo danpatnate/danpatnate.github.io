@@ -4,4 +4,3 @@ title: 'Hi Gatsby!'
 ---
 
 # Hi! This is our first item
-sdfahjglfhjahsdg;hd;flkghjdwhfglkjsdh
