@@ -1,5 +1,5 @@
 ---
-path: '/post/go-remote'
+path: '/go-remote'
 title: 'Why remote work works!'
 ---
 

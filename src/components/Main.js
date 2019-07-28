@@ -32,16 +32,37 @@ class Main extends React.Component {
           {close}
         </article>
 
-        <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <article id="about" className={`blog ${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Blog</h2>
           <span className="image main" style={{}}>
-            <img src={pic03} alt="Me - Dan" />
-            <div>Coming soon!</div>
+            <div style={{display: 'flex'}}>
+              <img src={pic03} alt="Me - Dan" />
+              <div>
+                <div className="listing">
+                  <i class="fas fa-coffee"></i><a href="/go-remote">Why remote work works!</a>
+                </div>
+                <div className="listing">
+                  <i class="fas fa-angle-right"></i><a href="/go-remote">Coding and painting??</a>
+                </div>
+                <div className="listing">
+                  <i class="fas fa-paint-brush"></i><a href="/go-remote">Finding work</a>
+                </div>
+                <div className="listing">
+                  <i class="fas fa-coffee"></i><a href="/go-remote">Why remote work works!</a>
+                </div>
+                <div className="listing">
+                  <i class="fas fa-angle-right"></i><a href="/go-remote">Coding and painting??</a>
+                </div>
+                <div className="listing">
+                  <i class="fas fa-paint-brush"></i><a href="/go-remote">Finding work</a>
+                </div>
+              </div>
+            </div>
           </span>
           {close}
         </article>
 
-        <article id="people" className={`${this.props.article === 'people' ? 'active wh' : 'wh'} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <article id="about" className={`${this.props.article === 'people' ? 'active wh' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">People I've worked with</h2>
           <span className="image main" style={{}}>
             <img src={accenture} alt="accenture" />
@@ -50,7 +71,7 @@ class Main extends React.Component {
           {close}
         </article>
 
-        <h2><a href="mailto:danpatnate@gmail.com">Contact me</a></h2>
+        <h2 className={`${this.props.article !== 'about' ? 'contact active' : 'contact'}`}><a href="mailto:danpatnate@gmail.com">Contact me</a></h2>
       </div>
     )
   }

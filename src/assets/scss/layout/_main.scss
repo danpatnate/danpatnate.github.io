@@ -49,6 +49,25 @@
 				display: block !important;
 			}
 
+			.listing {
+				margin: 12px;
+
+				a {
+					font-size: 24px;
+					border: none;
+					color: #8c65b3;
+					font-weight: bold;
+
+					&:hover {
+						color: #00C7B6;
+					}
+				}
+
+				i {
+					margin: 12px;
+				}
+			}
+
 			.close {
 				display: block;
 				position: absolute;
@@ -90,6 +109,20 @@
 				}
 			}
 
+		}
+
+		.blog {
+			width: 100%;
+			img {
+				max-width: 50%;
+			}
+		}
+
+		.contact {
+			display: none;
+			&.active {
+				display: block;
+			}
 		}
 
 		@include breakpoint(small) {
