@@ -48,20 +48,13 @@ class Main extends React.Component {
                   <i class="fas fa-paint-brush"></i><a href="/go-remote">Finding work</a>
                 </div>
                 <div className="listing">
-                  <i class="fas fa-coffee"></i><a href="/go-remote">Why remote work works!</a>
-                </div>
-                <div className="listing">
-                  <i class="fas fa-angle-right"></i><a href="/go-remote">Coding and painting??</a>
-                </div>
-                <div className="listing">
-                  <i class="fas fa-paint-brush"></i><a href="/go-remote">Finding work</a>
+                  <i class="fas fa-angle-right"></i><a href="/go-remote">Learning and more learning</a>
                 </div>
               </div>
             </div>
           </span>
           {close}
         </article>
-
         <article id="about" className={`${this.props.article === 'people' ? 'active wh' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">People I've worked with</h2>
           <span className="image main" style={{}}>
